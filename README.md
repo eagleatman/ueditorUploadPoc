@@ -1,5 +1,5 @@
-# 1. ueditorUploadPoc
-目前仅支持1.4.3和1.4.3.3版本webshell上传
+# 1. ueditorUploadPoc说明
+基于python3.9版本开发，目前仅支持1.4.3和1.4.3.3版本webshell上传
 + 1.4.3没有私有地址检测，就是source[]字段，
 + 1.4.3.3会对shell address做检查，如果发现是本地环回地址、10开头地址、192.168、169.等地址都不行
   ~~~aspx
@@ -29,3 +29,8 @@
         }
     }
     ~~~
+
+# 2. 使用
+~~~shell
+python3.9 ueditor143Poc.py
+~~~
